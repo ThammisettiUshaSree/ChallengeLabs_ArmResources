@@ -79,14 +79,14 @@
       "properties": {
         "addressSpace": {
           "addressPrefixes": [
-            "10.0.0.0/16"
+            "10.10.0.0/16"
           ]
         },
         "subnets": [
           {
             "name": "[variables('subnetName')]",
             "properties": {
-              "addressPrefix": "10.0.2.0/24"
+              "addressPrefix": "10.10.2.0/24"
             }
           }
         ]
@@ -142,7 +142,7 @@
               "subnet": {
                 "id": "[variables('subnetRef')]"
               },
-              "privateIPAddress": "10.0.2.6",
+              "privateIPAddress": "10.10.2.6",
               "privateIPAllocationMethod": "Static"
             },
             "name": "LoadBalancerFrontend"
